@@ -16,4 +16,28 @@ The database schema includes the following tables:
 
 ## Usage
 
-1. **Clone the Repository:**
+1. **Clone the Repository:**  ``git clone <URL>``
+2. **Create the Database:**
+3. **Insert Sample Data:**
+
+
+## Sample Data
+
+```SQL
+-- Table: Categories
+CREATE TABLE Categories (
+    category_id SERIAL PRIMARY KEY,
+    category_name VARCHAR(100) NOT NULL
+);
+
+-- Sample Data for Categories
+INSERT INTO Categories (category_name) VALUES 
+    ('Food'),
+    ('Beverages'),
+    ('Books'),
+    ('Stationery'),
+    ('Electronics');
+```
+
+
+
